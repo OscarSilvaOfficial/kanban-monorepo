@@ -1,12 +1,12 @@
 package main
 
 import (
-	"auth/router"
 	"github.com/gin-gonic/gin"
+	routes "auth/infra/routes"
 )
 
 func main() {
 	r := gin.Default()
-	r.GET("/ping", router.Router)
+	r.GET("/ping", routes.TasksRouter)
 	r.Run()
 }
