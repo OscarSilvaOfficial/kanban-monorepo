@@ -7,6 +7,6 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.GET("/acccounts", routes.AccountsRouter)
+	r.GET("/ping", routes.TasksRouter)
 	r.Run()
 }
