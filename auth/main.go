@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	routes "auth/infra/routes"
+	routes "auth/infra/routes/accounts"
 )
 
 func main() {
 	r := gin.Default()
-	r.GET("/acccounts", routes.AccountsRouter)
+	r.POST("/accounts", routes.CreateAccount)
 	r.Run()
 }
